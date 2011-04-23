@@ -1,6 +1,7 @@
 #ifndef FIXED_STAR_DXGI_HPP_
 #define FIXED_STAR_DXGI_HPP_
 
+#include "com.hpp"
 #include <specstrings.h>
 #include <dxgi.h>
 
