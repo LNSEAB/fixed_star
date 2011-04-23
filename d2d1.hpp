@@ -1,0 +1,47 @@
+#ifndef FIXED_STAR_D2D1_HPP_
+#define FIXED_STAR_D2D1_HPP_
+
+#ifndef MSC_VER
+#define D2D1_DECLARE_INTERFACE(X)
+#endif
+
+#include "com.hpp"
+#include <specstrings.h>
+#include <d2d1.h>
+#include <d2d1helper.h>
+
+#ifndef MSC_VER
+
+namespace fixed_star {
+
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1BitmapBrush )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1BitmapRenderTarget )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Brush )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1DCRenderTarget )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1DrawingStateBlock )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1EllipseGeometry )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Factory )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1GdiInteropRenderTarget )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Geometry )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1GeometrySink )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1GradientStopCollection )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1HwndRenderTarget )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Layer )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1LinearGradientBrush )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Mesh )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1PathGeometry )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1RadialGradientBrush )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1RectangleGeometry )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1RenderTarget )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1Resource )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1RoundedRectangleGeometry )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1SimplifiedGeometrySink )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1StrokeStyle )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1TessellationSink )
+	FIXED_STAR_UUIDOF_SPEC_IID( ID2D1TransformedGeometry )
+	
+} // namespace fixed_star
+
+#endif
+
+#endif // FIXED_STAR_D2D1_HPP_
