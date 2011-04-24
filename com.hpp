@@ -4,17 +4,11 @@
 #ifndef MSC_VER
 
 #include <unknwn.h>
-#include <cassert>
 
 namespace fixed_star {
 
 	template <class Interface>
-	inline const GUID& uuidof_impl()
-	{
-		assert( !"[uuidof_impl] undefined Intarface" );
-		static GUID dummy = { 0 };
-		return dummy;
-	}
+	inline const GUID& uuidof_impl();
 	
 } // namespace fixed_star
 
@@ -23,7 +17,7 @@ namespace fixed_star {
 	inline const GUID& uuidof_impl<T>()			\
 	{ return IID_##T; }
 
-#define __uuidof(T) fixed_star::uuidof_impl<T>()
+#define __uuidof(T) (fixed_star::uuidof_impl<T>())
 
 #endif
 
