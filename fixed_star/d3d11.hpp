@@ -2,7 +2,6 @@
 #define FIXED_STAR_D3D11_HPP_
 
 #include "com.hpp"
-#include <specstrings.h>
 #include <d3d11.h>
 #include <d3d11shader.h>
 #include <d3d11sdklayers.h>

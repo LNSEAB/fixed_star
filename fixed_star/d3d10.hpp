@@ -2,7 +2,6 @@
 #define FIXED_STAR_D3D10_HPP_
 
 #include "com.hpp"
-#include "d3dcommon.h"
 #include <d3d10.h>
 
 #ifndef MSC_VER

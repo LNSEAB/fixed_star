@@ -2,7 +2,6 @@
 #define FIXED_STAR_DXGI_HPP_
 
 #include "com.hpp"
-#include <specstrings.h>
 #include <dxgi.h>
 
 #ifndef MSC_VER

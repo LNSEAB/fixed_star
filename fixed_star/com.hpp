@@ -4,6 +4,7 @@
 #ifndef MSC_VER
 
 #include <unknwn.h>
+#include <specstrings.h>
 
 namespace fixed_star {
 
