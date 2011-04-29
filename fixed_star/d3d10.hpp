@@ -2,6 +2,7 @@
 #define FIXED_STAR_D3D10_HPP_
 
 #include "com.hpp"
+#include "d3dcommon.h"
 #include <d3d10.h>
 
 #ifndef MSC_VER
@@ -16,7 +17,7 @@ namespace fixed_star {
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10DepthStencilState )
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10Device )
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10DeviceChild )
-	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10Include )
+	//FIXED_STAR_UUIDOF_SPEC_IID( ID3D10Include )
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10InfoQueue )
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10InputLayout )
 	FIXED_STAR_UUIDOF_SPEC_IID( ID3D10Multithread )
