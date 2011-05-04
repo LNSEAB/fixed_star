@@ -5,6 +5,7 @@
 
 #include <unknwn.h>
 #include <specstrings.h>
+#include <rpcndr.h>
 
 namespace fixed_star {
 
