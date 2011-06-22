@@ -24,6 +24,7 @@ namespace fixed_star {
 }
 
 #define _COMDECL_H_
+#define __reserved
 
 #endif
 
