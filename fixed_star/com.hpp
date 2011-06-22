@@ -11,10 +11,16 @@ namespace fixed_star {
 	template <class Interface>
 	inline GUID uuidof_impl();
 	
+	inline GUID string_to_iid(const wchar_t *str)
+	{
+		GUID id;
+		::IIDFromString( const_cast<WCHAR *>( str ), &id );
+		return id;
+	}
+	
 } // namespace fixed_star
 
 #define FIXED_STAR_UUIDOF_SPEC_IID(T)				\
-	class T;										\
 	template <>										\
 	inline GUID uuidof_impl<T>()					\
 	{ return IID_##T; }
@@ -24,13 +30,12 @@ namespace fixed_star {
 	inline GUID uuidof_impl<T>()				\
 	{ return CLSID_##T; }
 
-#define FIXED_STAR_UUIDOF_SPEC_STRING(T, str)	\
-	template <>									\
-	inline GUID uuidof_impl<T>()				\
-	{											\
-		GUID id;								\
-		::IIDFromString( L##str, &id );			\
-		return id;								\
+#define FIXED_STAR_UUIDOF_SPEC_STRING(T, str)						\
+	template <>														\
+	inline GUID uuidof_impl<T>()									\
+	{																\
+		static const GUID id = fixed_star::string_to_iid( L##str );	\
+		return id;													\
 	}
 
 #define FIXED_STAR_UUIDOF_SPEC_DECL(T)			\

@@ -41,8 +41,6 @@ namespace fixed_star {
 	
 } // namespace fixed_star
 
-#undef D2D1_DECLARE_INTERFACE
-
 #endif
 
 #endif // FIXED_STAR_D2D1_HPP_
