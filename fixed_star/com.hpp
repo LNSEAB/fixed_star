@@ -14,6 +14,7 @@ namespace fixed_star {
 } // namespace fixed_star
 
 #define FIXED_STAR_UUIDOF_SPEC_IID(T)				\
+	class T;										\
 	template <>										\
 	inline GUID uuidof_impl<T>()					\
 	{ return IID_##T; }
