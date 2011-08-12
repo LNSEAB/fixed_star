@@ -6,10 +6,6 @@
 #define DWRITE_DECLARE_INTERFACE(iid)
 #define DECLSPEC_NOVTABLE
 
-#define __out_ecount_z(x)
-#define __out_z
-#define __in_z
-#define __in_z_opt
 #define __notnull
 #define __nullterminated
 #define __maybenull
