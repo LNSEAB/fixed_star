@@ -30,6 +30,10 @@ files=( \
 	"dwrite.dll"
 )
 
+if [ ! \( -d ./64 \) ]; then
+	mkdir 64
+fi
+
 for n in ${files[@]}
 do
 	filepath=/c/Windows/system32/${n}
@@ -39,4 +43,19 @@ done
 for n in /c/Windows/system32/d?dx*_*.dll
 do
 	dll2lib $n 64
+done
+
+if [ ! \( -d ./32 \) ]; then
+	mkdir 32
+fi
+
+for n in ${files[@]}
+do
+	filepath=/c/Windows/SysWOW64/${n}
+	dll2lib $filepath 32
+done
+
+for n in /c/Windows/SysWOW64/d?dx*_*.dll
+do
+	dll2lib $n 32
 done
